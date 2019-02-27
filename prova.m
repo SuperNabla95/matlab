@@ -1,11 +1,11 @@
-clear all
+clearvars
 clc
 
 t = 10;
-
-r = arrayfun(@(x) x.^3, [1:t]);
+xAxis = (1:t);
+yAxis = arrayfun(@(x) x.^3, xAxis);
 
 figure('Name','First Plot!','NumberTitle','off');
-plot([1:t],r,'green');
+plot(xAxis,yAxis,'green');
 grid on;
 
